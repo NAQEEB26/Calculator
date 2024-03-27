@@ -1,0 +1,96 @@
+/* .calculator {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 0.5s ease;
+  } */
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  #display {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #ddd, #ccc);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(145deg, #ccc, #bbb);
+  }
+  .calculator {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 0.5s ease;
+    position: relative; /* Added for absolute positioning of footer */
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 22px;
+    margin-left: 118px;
+    font-size: 14px;
+    color: #666;
+    cursor: default;
+    transition: color 0.3s ease;
+  }
+  .footer>a{
+    text-decoration: none;
+  }
+  .footer p:hover {
+    color: #333;
+    animation: shake 0.5s ease infinite;
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+  }
+  
